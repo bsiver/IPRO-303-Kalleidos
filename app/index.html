@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<script type="text/javascript" src="../lib/js/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+					$(".button").click(function(){
+						$("#right").load("fluff");
+						});
+					});
+		</script>
+	</head>
+<body>
+	<div class="header">
+		<h1> IPRO 303-Kalleidos</h1>
+	</div>
+	<div class="center">
+		<form action="twitterFeeds.php" method="post">
+			<h2>Twitter</h2>
+			Keyword Search: <input type="text" name="twit"/><br/>
+			Latitude: <input type="text" name="twitLat" value="41.85"/><br/>
+			Longitude: <input type="text" name="twitLon" value="-87.65"/><br/>
+			<input type = "submit" value="Submit"/><br/>
+		</form>
+		<form action="foursquareFeeds.php" method="post">
+			<h2>FourSquare</h2>
+			Keyword Search: <input type="text" name="four"/><br/>
+			Latitude: <input type="text" name="fourLat" value="41.85"/><br/>
+			Longitude: <input type="text" name="fourLon" value="-87.65"/><br/>
+			<input type = "submit" value="Submit"/><br/>
+		</form>
+		<form action="flickrFeeds.php" method="post">
+			<h2>Flickr</h2>
+			Keyword Search: <input type="text" name="flick"/><br/>
+			Latitude: <input type="text" name="flickLat" value="41.85"/><br/>
+			Longitude: <input type="text" name="flickLon" value="-87.65"/><br/>
+			<input type = "submit" value="Submit"/><br/>
+			<input name="button" type="button" id="button" 
+			onClick="window.location='stats.php'" value="Run Statistics">
+			<input name="button" type="button" id="button" 
+			onClick="window.location='twitterKeywords.php'" value="Run Twitter Keyword Search">
+			<input name="button" type="button" id="button" 
+			onClick="window.location='foursquareKeywords.php'" value="Run Foursquare Keyword Search">
+		</form>
+	</div>
+	<div class="footer">
+		<h3>Sponsored by NAVTEQ</h3>
+	</div>
+</body>
+</html>

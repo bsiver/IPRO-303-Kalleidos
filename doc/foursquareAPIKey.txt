@@ -1,0 +1,7 @@
+key: ZTMMWGLT5GO5X5A0JN1CAZ22F0MQECYFYIFKGASRS215FKPD
+secret: Y2C2IBP3DG0M5B1K4ZVK2MQ2RXPWXNZ1N3KNFHHXWV0TI1FE
+Access Token URL
+https://foursquare.com/oauth2/access_token
+
+Authorize URL
+https://foursquare.com/oauth2/authorize
